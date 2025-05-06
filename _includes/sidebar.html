@@ -1,0 +1,12 @@
+{% raw %}
+<nav>
+  <h3>Contents</h3>
+  <ul>
+    {% for note in site.notes %}
+      {% if note.category  == "math" %}
+        <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+{% endraw %}
