@@ -1,0 +1,11 @@
+title: My Notebooks
+collections:
+  notes: # 定义笔记集合
+    output: true             # 生成独立页面
+    permalink: /notes/:path/ # 路由规则
+
+defaults:
+  - scope:
+      path: "_notes"   # 应用默认布局到笔记
+    values:
+      layout: note     # 使用note.html 布局
