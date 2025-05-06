@@ -3,7 +3,7 @@
   <h3>Contents</h3>
   <ul>
     {% for note in site.notes %}
-      {% if note.category  == "math" %}
+      {% if note.category  == "notebooks" %}
         <li><a href="{{ note.url }}">{{ note.title }}</a></li>
       {% endif %}
     {% endfor %}
